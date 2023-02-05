@@ -21,11 +21,11 @@ class FilmRepositoryImpl(
         return dao.getFilmById(id)
     }
 
-    override suspend fun insertNote(note: Film) {
-        dao.insertFilm(note)
+    override suspend fun insertFilm(film: Film) {
+        dao.insertFilm(film)
     }
 
-    override suspend fun deleteNote(note: Film) {
-        dao.deleteFilm(note)
+    override suspend fun deleteFilm(film: Film) {
+        dao.deleteFilm(film)
     }
 }

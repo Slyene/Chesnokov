@@ -11,7 +11,7 @@ interface FilmRepository {
 
     suspend fun getFilmById(id: Int): Film?
 
-    suspend fun insertNote(note: Film)
+    suspend fun insertFilm(film: Film)
 
-    suspend fun deleteNote(note: Film)
+    suspend fun deleteFilm(film: Film)
 }

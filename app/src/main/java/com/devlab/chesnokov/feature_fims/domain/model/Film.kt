@@ -6,13 +6,13 @@ import androidx.room.PrimaryKey
 @Entity
 data class Film(
     @PrimaryKey val filmId: Int? = null,
-    val nameRu: String,
-    val description: String,
-    val year: Int,
-    val countries: List<String>,
-    val genres: List<String>,
-    val posterUrl: String,
-    val posterUrlPreview: String,
+    val nameRu: String = "",
+    val description: String = "",
+    val year: String = "",
+    val countries: List<String> = listOf(),
+    val genres: List<String> = listOf(),
+    val posterUrl: String = "",
+    val posterUrlPreview: String = "",
     val isFavorite: Boolean = false,
 )
 
